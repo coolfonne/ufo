@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C37825C21331415700DF9931 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37825C11331415700DF9931 /* Cocoa.framework */; };
+		C37825CC1331415700DF9931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C37825CA1331415700DF9931 /* InfoPlist.strings */; };
+		C37825CF1331415700DF9931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C37825CE1331415700DF9931 /* main.m */; };
+		C37825D21331415700DF9931 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C37825D01331415700DF9931 /* Credits.rtf */; };
+		C37825D51331415700DF9931 /* UFO_InvasionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */; };
+		C37825D81331415700DF9931 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37825D61331415700DF9931 /* MainMenu.xib */; };
+		C37825DB1331415700DF9931 /* UFO_Invasion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37825D91331415700DF9931 /* UFO_Invasion.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C37825BD1331415700DF9931 /* UFO Invasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UFO Invasion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37825C11331415700DF9931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C37825C41331415700DF9931 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C37825C51331415700DF9931 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C37825C61331415700DF9931 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C37825C91331415700DF9931 /* UFO_Invasion-Info.plist */ = {isa = PBXFileReference; path = "UFO_Invasion-Info.plist"; sourceTree = "<group>"; };
+		C37825CB1331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C37825CD1331415700DF9931 /* UFO_Invasion-Prefix.pch */ = {isa = PBXFileReference; path = "UFO_Invasion-Prefix.pch"; sourceTree = "<group>"; };
+		C37825CE1331415700DF9931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C37825D11331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C37825D31331415700DF9931 /* UFO_InvasionAppDelegate.h */ = {isa = PBXFileReference; path = UFO_InvasionAppDelegate.h; sourceTree = "<group>"; };
+		C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UFO_InvasionAppDelegate.m; sourceTree = "<group>"; };
+		C37825D71331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C37825DA1331415700DF9931 /* UFO_Invasion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UFO_Invasion.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C37825BA1331415600DF9931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37825C21331415700DF9931 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C37825B21331415600DF9931 = {
+			isa = PBXGroup;
+			children = (
+				C37825C71331415700DF9931 /* UFO Invasion */,
+				C37825C01331415700DF9931 /* Frameworks */,
+				C37825BE1331415700DF9931 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C37825BE1331415700DF9931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C37825BD1331415700DF9931 /* UFO Invasion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37825C01331415700DF9931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37825C11331415700DF9931 /* Cocoa.framework */,
+				C37825C31331415700DF9931 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C37825C31331415700DF9931 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37825C41331415700DF9931 /* AppKit.framework */,
+				C37825C51331415700DF9931 /* CoreData.framework */,
+				C37825C61331415700DF9931 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C37825C71331415700DF9931 /* UFO Invasion */ = {
+			isa = PBXGroup;
+			children = (
+				C37825D31331415700DF9931 /* UFO_InvasionAppDelegate.h */,
+				C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */,
+				C37825D61331415700DF9931 /* MainMenu.xib */,
+				C37825D91331415700DF9931 /* UFO_Invasion.xcdatamodeld */,
+				C37825C81331415700DF9931 /* Supporting Files */,
+			);
+			path = "UFO Invasion";
+			sourceTree = "<group>";
+		};
+		C37825C81331415700DF9931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C37825C91331415700DF9931 /* UFO_Invasion-Info.plist */,
+				C37825CA1331415700DF9931 /* InfoPlist.strings */,
+				C37825CD1331415700DF9931 /* UFO_Invasion-Prefix.pch */,
+				C37825CE1331415700DF9931 /* main.m */,
+				C37825D01331415700DF9931 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C37825BC1331415600DF9931 /* UFO Invasion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "UFO Invasion" */;
+			buildPhases = (
+				C37825B91331415600DF9931 /* Sources */,
+				C37825BA1331415600DF9931 /* Frameworks */,
+				C37825BB1331415600DF9931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UFO Invasion";
+			productName = "UFO Invasion";
+			productReference = C37825BD1331415700DF9931 /* UFO Invasion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C37825B41331415600DF9931 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C37825B71331415600DF9931 /* Build configuration list for PBXProject "UFO Invasion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C37825B21331415600DF9931;
+			productRefGroup = C37825BE1331415700DF9931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C37825BC1331415600DF9931 /* UFO Invasion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C37825BB1331415600DF9931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37825CC1331415700DF9931 /* InfoPlist.strings in Resources */,
+				C37825D21331415700DF9931 /* Credits.rtf in Resources */,
+				C37825D81331415700DF9931 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C37825B91331415600DF9931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37825CF1331415700DF9931 /* main.m in Sources */,
+				C37825D51331415700DF9931 /* UFO_InvasionAppDelegate.m in Sources */,
+				C37825DB1331415700DF9931 /* UFO_Invasion.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C37825CA1331415700DF9931 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37825CB1331415700DF9931 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C37825D01331415700DF9931 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37825D11331415700DF9931 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C37825D61331415700DF9931 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37825D71331415700DF9931 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C37825DC1331415700DF9931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C37825DD1331415700DF9931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C37825DF1331415700DF9931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UFO Invasion/UFO_Invasion-Prefix.pch";
+				INFOPLIST_FILE = "UFO Invasion/UFO_Invasion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C37825E01331415700DF9931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UFO Invasion/UFO_Invasion-Prefix.pch";
+				INFOPLIST_FILE = "UFO Invasion/UFO_Invasion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C37825B71331415600DF9931 /* Build configuration list for PBXProject "UFO Invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37825DC1331415700DF9931 /* Debug */,
+				C37825DD1331415700DF9931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "UFO Invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37825DF1331415700DF9931 /* Debug */,
+				C37825E01331415700DF9931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C37825D91331415700DF9931 /* UFO_Invasion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C37825DA1331415700DF9931 /* UFO_Invasion.xcdatamodel */,
+			);
+			currentVersion = C37825DA1331415700DF9931 /* UFO_Invasion.xcdatamodel */;
+			path = UFO_Invasion.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C37825B41331415600DF9931 /* Project object */;
+}
