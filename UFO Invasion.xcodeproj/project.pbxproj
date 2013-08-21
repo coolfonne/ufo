@@ -7,30 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA88B2AC1599361000DCBD83 /* niceufo.icns in Resources */ = {isa = PBXBuildFile; fileRef = BA88B2AB1599361000DCBD83 /* niceufo.icns */; };
+		C324008A13341DE900C3D408 /* plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C324008813341DE900C3D408 /* plane.mtl */; };
+		C324008B13341DE900C3D408 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = C324008913341DE900C3D408 /* plane.obj */; };
+		C329B59B13344EE5008CA3E1 /* perlin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C329B59A13344EE5008CA3E1 /* perlin.cpp */; };
+		C329B59E13344F6C008CA3E1 /* barycent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C329B59D13344F6C008CA3E1 /* barycent.cpp */; };
+		C329B5A013345079008CA3E1 /* skycube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C329B59F13345079008CA3E1 /* skycube.cpp */; };
+		C329B5A313346CEC008CA3E1 /* myfont.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C329B5A113346CEC008CA3E1 /* myfont.mtl */; };
+		C329B5A413346CEC008CA3E1 /* myfont.obj in Resources */ = {isa = PBXBuildFile; fileRef = C329B5A213346CEC008CA3E1 /* myfont.obj */; };
 		C37825C21331415700DF9931 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37825C11331415700DF9931 /* Cocoa.framework */; };
 		C37825CC1331415700DF9931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C37825CA1331415700DF9931 /* InfoPlist.strings */; };
-		C37825CF1331415700DF9931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C37825CE1331415700DF9931 /* main.m */; };
+		C37825CF1331415700DF9931 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C37825CE1331415700DF9931 /* main.mm */; };
 		C37825D21331415700DF9931 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C37825D01331415700DF9931 /* Credits.rtf */; };
 		C37825D51331415700DF9931 /* UFO_InvasionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */; };
 		C37825D81331415700DF9931 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37825D61331415700DF9931 /* MainMenu.xib */; };
 		C37825DB1331415700DF9931 /* UFO_Invasion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37825D91331415700DF9931 /* UFO_Invasion.xcdatamodeld */; };
+		C37825E2133141E400DF9931 /* invasion.mm in Sources */ = {isa = PBXBuildFile; fileRef = C37825E1133141E400DF9931 /* invasion.mm */; };
+		C37825F813314B5600DF9931 /* wavefront.mm in Sources */ = {isa = PBXBuildFile; fileRef = C37825F713314B5500DF9931 /* wavefront.mm */; };
+		C37825FB13314DFE00DF9931 /* matrixlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37825FA13314DFE00DF9931 /* matrixlib.cpp */; };
+		C37825FD13314E8B00DF9931 /* box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C37825FC13314E8A00DF9931 /* box.cpp */; };
+		C37E18AF133435BF0076C5E4 /* ufo.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18AD133435BF0076C5E4 /* ufo.mtl */; };
+		C37E18B0133435BF0076C5E4 /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18AE133435BF0076C5E4 /* ufo.obj */; };
+		C37E18B3133437150076C5E4 /* ufodamaged.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B1133437150076C5E4 /* ufodamaged.mtl */; };
+		C37E18B4133437150076C5E4 /* ufodamaged.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B2133437150076C5E4 /* ufodamaged.obj */; };
+		C37E18BF133438470076C5E4 /* ufo2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B5133438460076C5E4 /* ufo2.mtl */; };
+		C37E18C0133438470076C5E4 /* ufo2.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B6133438460076C5E4 /* ufo2.obj */; };
+		C37E18C1133438470076C5E4 /* ufo3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B7133438460076C5E4 /* ufo3.mtl */; };
+		C37E18C2133438470076C5E4 /* ufo3.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B8133438470076C5E4 /* ufo3.obj */; };
+		C37E18C3133438470076C5E4 /* ufo3damaged.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18B9133438470076C5E4 /* ufo3damaged.mtl */; };
+		C37E18C4133438470076C5E4 /* ufo3damaged.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18BA133438470076C5E4 /* ufo3damaged.obj */; };
+		C37E18C5133438470076C5E4 /* ufo4.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18BB133438470076C5E4 /* ufo4.mtl */; };
+		C37E18C6133438470076C5E4 /* ufo4.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18BC133438470076C5E4 /* ufo4.obj */; };
+		C37E18C7133438470076C5E4 /* ufo4damaged.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18BD133438470076C5E4 /* ufo4damaged.mtl */; };
+		C37E18C8133438470076C5E4 /* ufo4damaged.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18BE133438470076C5E4 /* ufo4damaged.obj */; };
+		C37E18CB13343A1C0076C5E4 /* bomb.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18C913343A1C0076C5E4 /* bomb.mtl */; };
+		C37E18CC13343A1C0076C5E4 /* bomb.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18CA13343A1C0076C5E4 /* bomb.obj */; };
+		C37E18CF13343BBE0076C5E4 /* mothership.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18CD13343BBD0076C5E4 /* mothership.mtl */; };
+		C37E18D013343BBE0076C5E4 /* mothership.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18CE13343BBE0076C5E4 /* mothership.obj */; };
+		C37E18D313343CB90076C5E4 /* mothershipdamaged.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18D113343CB90076C5E4 /* mothershipdamaged.mtl */; };
+		C37E18D413343CB90076C5E4 /* mothershipdamaged.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18D213343CB90076C5E4 /* mothershipdamaged.obj */; };
+		C37E18D713343DF10076C5E4 /* explosion.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18D513343DF10076C5E4 /* explosion.mtl */; };
+		C37E18D813343DF10076C5E4 /* explosion.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18D613343DF10076C5E4 /* explosion.obj */; };
+		C37E18DB13343EE50076C5E4 /* missile.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C37E18D913343EE50076C5E4 /* missile.mtl */; };
+		C37E18DC13343EE50076C5E4 /* missile.obj in Resources */ = {isa = PBXBuildFile; fileRef = C37E18DA13343EE50076C5E4 /* missile.obj */; };
+		C3B2073F133553F6005A4512 /* ufo-icons2.icns in Resources */ = {isa = PBXBuildFile; fileRef = C3B2073E133553F6005A4512 /* ufo-icons2.icns */; };
+		C3FA1EAF133479830042F556 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3FA1EAE133479820042F556 /* explosion.wav */; };
+		E193A99E145F087800E73D9A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E193A99D145F087800E73D9A /* GLUT.framework */; };
+		E193A9A0145F088400E73D9A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E193A99F145F088400E73D9A /* OpenGL.framework */; };
+		E1F1C9D614C7D6BD005B2DB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F1C9D514C7D6BD005B2DB7 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C37825BD1331415700DF9931 /* UFO Invasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UFO Invasion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6DFEB015B29EEF00AFDDEC /* UFO Invasion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "UFO Invasion.entitlements"; sourceTree = "<group>"; };
+		BA88B2AB1599361000DCBD83 /* niceufo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = niceufo.icns; sourceTree = "<group>"; };
+		C324008813341DE900C3D408 /* plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.mtl; sourceTree = "<group>"; };
+		C324008913341DE900C3D408 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		C329B59A13344EE5008CA3E1 /* perlin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perlin.cpp; sourceTree = "<group>"; };
+		C329B59D13344F6C008CA3E1 /* barycent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = barycent.cpp; sourceTree = "<group>"; };
+		C329B59F13345079008CA3E1 /* skycube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = skycube.cpp; sourceTree = "<group>"; };
+		C329B5A113346CEC008CA3E1 /* myfont.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myfont.mtl; sourceTree = "<group>"; };
+		C329B5A213346CEC008CA3E1 /* myfont.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myfont.obj; sourceTree = "<group>"; };
+		C37825BD1331415700DF9931 /* pp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37825C11331415700DF9931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C37825C41331415700DF9931 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C37825C51331415700DF9931 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C37825C61331415700DF9931 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C37825C91331415700DF9931 /* UFO_Invasion-Info.plist */ = {isa = PBXFileReference; path = "UFO_Invasion-Info.plist"; sourceTree = "<group>"; };
+		C37825C91331415700DF9931 /* UFO_Invasion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UFO_Invasion-Info.plist"; sourceTree = "<group>"; };
 		C37825CB1331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C37825CD1331415700DF9931 /* UFO_Invasion-Prefix.pch */ = {isa = PBXFileReference; path = "UFO_Invasion-Prefix.pch"; sourceTree = "<group>"; };
-		C37825CE1331415700DF9931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C37825CD1331415700DF9931 /* UFO_Invasion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UFO_Invasion-Prefix.pch"; sourceTree = "<group>"; };
+		C37825CE1331415700DF9931 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C37825D11331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C37825D31331415700DF9931 /* UFO_InvasionAppDelegate.h */ = {isa = PBXFileReference; path = UFO_InvasionAppDelegate.h; sourceTree = "<group>"; };
+		C37825D31331415700DF9931 /* UFO_InvasionAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UFO_InvasionAppDelegate.h; sourceTree = "<group>"; };
 		C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UFO_InvasionAppDelegate.m; sourceTree = "<group>"; };
 		C37825D71331415700DF9931 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C37825DA1331415700DF9931 /* UFO_Invasion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UFO_Invasion.xcdatamodel; sourceTree = "<group>"; };
+		C37825E1133141E400DF9931 /* invasion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = invasion.mm; sourceTree = "<group>"; };
+		C37825E31331423100DF9931 /* box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = box.h; sourceTree = "<group>"; };
+		C37825E41331425200DF9931 /* wavefront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavefront.h; sourceTree = "<group>"; };
+		C37825E6133142C700DF9931 /* newfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newfont.h; sourceTree = "<group>"; };
+		C37825F713314B5500DF9931 /* wavefront.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wavefront.mm; sourceTree = "<group>"; };
+		C37825F913314DF200DF9931 /* matrixlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrixlib.h; sourceTree = "<group>"; };
+		C37825FA13314DFE00DF9931 /* matrixlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrixlib.cpp; sourceTree = "<group>"; };
+		C37825FC13314E8A00DF9931 /* box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = box.cpp; sourceTree = "<group>"; };
+		C37E18AD133435BF0076C5E4 /* ufo.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.mtl; sourceTree = "<group>"; };
+		C37E18AE133435BF0076C5E4 /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
+		C37E18B1133437150076C5E4 /* ufodamaged.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufodamaged.mtl; sourceTree = "<group>"; };
+		C37E18B2133437150076C5E4 /* ufodamaged.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufodamaged.obj; sourceTree = "<group>"; };
+		C37E18B5133438460076C5E4 /* ufo2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo2.mtl; sourceTree = "<group>"; };
+		C37E18B6133438460076C5E4 /* ufo2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo2.obj; sourceTree = "<group>"; };
+		C37E18B7133438460076C5E4 /* ufo3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo3.mtl; sourceTree = "<group>"; };
+		C37E18B8133438470076C5E4 /* ufo3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo3.obj; sourceTree = "<group>"; };
+		C37E18B9133438470076C5E4 /* ufo3damaged.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo3damaged.mtl; sourceTree = "<group>"; };
+		C37E18BA133438470076C5E4 /* ufo3damaged.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo3damaged.obj; sourceTree = "<group>"; };
+		C37E18BB133438470076C5E4 /* ufo4.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo4.mtl; sourceTree = "<group>"; };
+		C37E18BC133438470076C5E4 /* ufo4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo4.obj; sourceTree = "<group>"; };
+		C37E18BD133438470076C5E4 /* ufo4damaged.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo4damaged.mtl; sourceTree = "<group>"; };
+		C37E18BE133438470076C5E4 /* ufo4damaged.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo4damaged.obj; sourceTree = "<group>"; };
+		C37E18C913343A1C0076C5E4 /* bomb.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bomb.mtl; sourceTree = "<group>"; };
+		C37E18CA13343A1C0076C5E4 /* bomb.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bomb.obj; sourceTree = "<group>"; };
+		C37E18CD13343BBD0076C5E4 /* mothership.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mothership.mtl; sourceTree = "<group>"; };
+		C37E18CE13343BBE0076C5E4 /* mothership.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mothership.obj; sourceTree = "<group>"; };
+		C37E18D113343CB90076C5E4 /* mothershipdamaged.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mothershipdamaged.mtl; sourceTree = "<group>"; };
+		C37E18D213343CB90076C5E4 /* mothershipdamaged.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mothershipdamaged.obj; sourceTree = "<group>"; };
+		C37E18D513343DF10076C5E4 /* explosion.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = explosion.mtl; sourceTree = "<group>"; };
+		C37E18D613343DF10076C5E4 /* explosion.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = explosion.obj; sourceTree = "<group>"; };
+		C37E18D913343EE50076C5E4 /* missile.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = missile.mtl; sourceTree = "<group>"; };
+		C37E18DA13343EE50076C5E4 /* missile.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = missile.obj; sourceTree = "<group>"; };
+		C37E18DF1334462E0076C5E4 /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin.h; sourceTree = "<group>"; };
+		C37E18E0133446A50076C5E4 /* barycent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = barycent.h; sourceTree = "<group>"; };
+		C37E18E1133448C00076C5E4 /* skycube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skycube.h; path = "UFO Invasion.xcodeproj/skycube.h"; sourceTree = "<group>"; };
+		C3B2073E133553F6005A4512 /* ufo-icons2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "ufo-icons2.icns"; sourceTree = "<group>"; };
+		C3FA1EAE133479820042F556 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		E193A99D145F087800E73D9A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		E193A99F145F088400E73D9A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E1F1C9D514C7D6BD005B2DB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F1C9D614C7D6BD005B2DB7 /* AudioToolbox.framework in Frameworks */,
+				E193A9A0145F088400E73D9A /* OpenGL.framework in Frameworks */,
+				E193A99E145F087800E73D9A /* GLUT.framework in Frameworks */,
 				C37825C21331415700DF9931 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +141,38 @@
 		C37825B21331415600DF9931 = {
 			isa = PBXGroup;
 			children = (
+				E1F1C9D514C7D6BD005B2DB7 /* AudioToolbox.framework */,
+				C3B2073E133553F6005A4512 /* ufo-icons2.icns */,
+				C3FA1EAE133479820042F556 /* explosion.wav */,
+				C329B5A113346CEC008CA3E1 /* myfont.mtl */,
+				C329B5A213346CEC008CA3E1 /* myfont.obj */,
+				BA88B2AB1599361000DCBD83 /* niceufo.icns */,
+				C329B59F13345079008CA3E1 /* skycube.cpp */,
+				C37E18E1133448C00076C5E4 /* skycube.h */,
+				C37E18E0133446A50076C5E4 /* barycent.h */,
+				C37E18D913343EE50076C5E4 /* missile.mtl */,
+				C37E18DF1334462E0076C5E4 /* perlin.h */,
+				C37E18DA13343EE50076C5E4 /* missile.obj */,
+				C37E18D513343DF10076C5E4 /* explosion.mtl */,
+				C37E18D613343DF10076C5E4 /* explosion.obj */,
+				C37E18D113343CB90076C5E4 /* mothershipdamaged.mtl */,
+				C37E18D213343CB90076C5E4 /* mothershipdamaged.obj */,
+				C37E18CD13343BBD0076C5E4 /* mothership.mtl */,
+				C37E18CE13343BBE0076C5E4 /* mothership.obj */,
+				C37E18C913343A1C0076C5E4 /* bomb.mtl */,
+				C37E18CA13343A1C0076C5E4 /* bomb.obj */,
+				C37E18B5133438460076C5E4 /* ufo2.mtl */,
+				C37E18B6133438460076C5E4 /* ufo2.obj */,
+				C37E18B7133438460076C5E4 /* ufo3.mtl */,
+				C37E18B8133438470076C5E4 /* ufo3.obj */,
+				C37E18B9133438470076C5E4 /* ufo3damaged.mtl */,
+				C37E18BA133438470076C5E4 /* ufo3damaged.obj */,
+				C37E18BB133438470076C5E4 /* ufo4.mtl */,
+				C37E18BC133438470076C5E4 /* ufo4.obj */,
+				C37E18BD133438470076C5E4 /* ufo4damaged.mtl */,
+				C37E18BE133438470076C5E4 /* ufo4damaged.obj */,
+				C37E18B1133437150076C5E4 /* ufodamaged.mtl */,
+				C37E18B2133437150076C5E4 /* ufodamaged.obj */,
 				C37825C71331415700DF9931 /* UFO Invasion */,
 				C37825C01331415700DF9931 /* Frameworks */,
 				C37825BE1331415700DF9931 /* Products */,
@@ -57,7 +182,7 @@
 		C37825BE1331415700DF9931 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C37825BD1331415700DF9931 /* UFO Invasion.app */,
+				C37825BD1331415700DF9931 /* pp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +190,8 @@
 		C37825C01331415700DF9931 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E193A99F145F088400E73D9A /* OpenGL.framework */,
+				E193A99D145F087800E73D9A /* GLUT.framework */,
 				C37825C11331415700DF9931 /* Cocoa.framework */,
 				C37825C31331415700DF9931 /* Other Frameworks */,
 			);
@@ -84,6 +211,19 @@
 		C37825C71331415700DF9931 /* UFO Invasion */ = {
 			isa = PBXGroup;
 			children = (
+				BA6DFEB015B29EEF00AFDDEC /* UFO Invasion.entitlements */,
+				C37E18AD133435BF0076C5E4 /* ufo.mtl */,
+				C37E18AE133435BF0076C5E4 /* ufo.obj */,
+				C324008813341DE900C3D408 /* plane.mtl */,
+				C324008913341DE900C3D408 /* plane.obj */,
+				C37825FA13314DFE00DF9931 /* matrixlib.cpp */,
+				C37825F913314DF200DF9931 /* matrixlib.h */,
+				C37825E6133142C700DF9931 /* newfont.h */,
+				C37825E41331425200DF9931 /* wavefront.h */,
+				C37825F713314B5500DF9931 /* wavefront.mm */,
+				C37825E31331423100DF9931 /* box.h */,
+				C37825FC13314E8A00DF9931 /* box.cpp */,
+				C37825E1133141E400DF9931 /* invasion.mm */,
 				C37825D31331415700DF9931 /* UFO_InvasionAppDelegate.h */,
 				C37825D41331415700DF9931 /* UFO_InvasionAppDelegate.m */,
 				C37825D61331415700DF9931 /* MainMenu.xib */,
@@ -99,7 +239,9 @@
 				C37825C91331415700DF9931 /* UFO_Invasion-Info.plist */,
 				C37825CA1331415700DF9931 /* InfoPlist.strings */,
 				C37825CD1331415700DF9931 /* UFO_Invasion-Prefix.pch */,
-				C37825CE1331415700DF9931 /* main.m */,
+				C37825CE1331415700DF9931 /* main.mm */,
+				C329B59A13344EE5008CA3E1 /* perlin.cpp */,
+				C329B59D13344F6C008CA3E1 /* barycent.cpp */,
 				C37825D01331415700DF9931 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -108,9 +250,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C37825BC1331415600DF9931 /* UFO Invasion */ = {
+		C37825BC1331415600DF9931 /* pp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "UFO Invasion" */;
+			buildConfigurationList = C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "pp" */;
 			buildPhases = (
 				C37825B91331415600DF9931 /* Sources */,
 				C37825BA1331415600DF9931 /* Frameworks */,
@@ -120,9 +262,9 @@
 			);
 			dependencies = (
 			);
-			name = "UFO Invasion";
+			name = pp;
 			productName = "UFO Invasion";
-			productReference = C37825BD1331415700DF9931 /* UFO Invasion.app */;
+			productReference = C37825BD1331415700DF9931 /* pp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,6 +272,9 @@
 /* Begin PBXProject section */
 		C37825B41331415600DF9931 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C37825B71331415600DF9931 /* Build configuration list for PBXProject "UFO Invasion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -142,7 +287,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C37825BC1331415600DF9931 /* UFO Invasion */,
+				C37825BC1331415600DF9931 /* pp */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +300,37 @@
 				C37825CC1331415700DF9931 /* InfoPlist.strings in Resources */,
 				C37825D21331415700DF9931 /* Credits.rtf in Resources */,
 				C37825D81331415700DF9931 /* MainMenu.xib in Resources */,
+				C324008A13341DE900C3D408 /* plane.mtl in Resources */,
+				C324008B13341DE900C3D408 /* plane.obj in Resources */,
+				C37E18AF133435BF0076C5E4 /* ufo.mtl in Resources */,
+				C37E18B0133435BF0076C5E4 /* ufo.obj in Resources */,
+				C37E18B3133437150076C5E4 /* ufodamaged.mtl in Resources */,
+				C37E18B4133437150076C5E4 /* ufodamaged.obj in Resources */,
+				C37E18BF133438470076C5E4 /* ufo2.mtl in Resources */,
+				C37E18C0133438470076C5E4 /* ufo2.obj in Resources */,
+				C37E18C1133438470076C5E4 /* ufo3.mtl in Resources */,
+				C37E18C2133438470076C5E4 /* ufo3.obj in Resources */,
+				C37E18C3133438470076C5E4 /* ufo3damaged.mtl in Resources */,
+				C37E18C4133438470076C5E4 /* ufo3damaged.obj in Resources */,
+				C37E18C5133438470076C5E4 /* ufo4.mtl in Resources */,
+				C37E18C6133438470076C5E4 /* ufo4.obj in Resources */,
+				C37E18C7133438470076C5E4 /* ufo4damaged.mtl in Resources */,
+				C37E18C8133438470076C5E4 /* ufo4damaged.obj in Resources */,
+				C37E18CB13343A1C0076C5E4 /* bomb.mtl in Resources */,
+				C37E18CC13343A1C0076C5E4 /* bomb.obj in Resources */,
+				C37E18CF13343BBE0076C5E4 /* mothership.mtl in Resources */,
+				C37E18D013343BBE0076C5E4 /* mothership.obj in Resources */,
+				C37E18D313343CB90076C5E4 /* mothershipdamaged.mtl in Resources */,
+				C37E18D413343CB90076C5E4 /* mothershipdamaged.obj in Resources */,
+				C37E18D713343DF10076C5E4 /* explosion.mtl in Resources */,
+				C37E18D813343DF10076C5E4 /* explosion.obj in Resources */,
+				C37E18DB13343EE50076C5E4 /* missile.mtl in Resources */,
+				C37E18DC13343EE50076C5E4 /* missile.obj in Resources */,
+				C329B5A313346CEC008CA3E1 /* myfont.mtl in Resources */,
+				C329B5A413346CEC008CA3E1 /* myfont.obj in Resources */,
+				C3FA1EAF133479830042F556 /* explosion.wav in Resources */,
+				C3B2073F133553F6005A4512 /* ufo-icons2.icns in Resources */,
+				BA88B2AC1599361000DCBD83 /* niceufo.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +341,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37825CF1331415700DF9931 /* main.m in Sources */,
+				C37825CF1331415700DF9931 /* main.mm in Sources */,
 				C37825D51331415700DF9931 /* UFO_InvasionAppDelegate.m in Sources */,
 				C37825DB1331415700DF9931 /* UFO_Invasion.xcdatamodeld in Sources */,
+				C37825E2133141E400DF9931 /* invasion.mm in Sources */,
+				C37825F813314B5600DF9931 /* wavefront.mm in Sources */,
+				C37825FB13314DFE00DF9931 /* matrixlib.cpp in Sources */,
+				C37825FD13314E8B00DF9931 /* box.cpp in Sources */,
+				C329B59B13344EE5008CA3E1 /* perlin.cpp in Sources */,
+				C329B59E13344F6C008CA3E1 /* barycent.cpp in Sources */,
+				C329B5A013345079008CA3E1 /* skycube.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +387,10 @@
 		C37825DC1331415700DF9931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: michael carson";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -214,6 +399,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5E6BA22E-B4BD-4652-B99D-A8BCB3CED801";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -221,13 +407,16 @@
 		C37825DD1331415700DF9931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: michael carson";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PROVISIONING_PROFILE = "5E6BA22E-B4BD-4652-B99D-A8BCB3CED801";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -236,7 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "UFO Invasion/UFO Invasion.entitlements";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -251,12 +447,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "UFO Invasion/UFO Invasion.entitlements";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UFO Invasion/UFO_Invasion-Prefix.pch";
 				INFOPLIST_FILE = "UFO Invasion/UFO_Invasion-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,13 +478,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "UFO Invasion" */ = {
+		C37825DE1331415700DF9931 /* Build configuration list for PBXNativeTarget "pp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C37825DF1331415700DF9931 /* Debug */,
 				C37825E01331415700DF9931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
