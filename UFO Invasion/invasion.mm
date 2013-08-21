@@ -219,75 +219,10 @@ bool musicrolling = false;
 
 void mymain(void)
 {
-    
-    
-    
-    
-    
-    
-    
-    //                    
-    //  WNDCLASS wc;
-    //  HWND hWnd;
-    //  HDC hDC;
-    //  HGLRC hRC;        
-    //  MSG msg;
-    //  BOOL bQuit = FALSE;
-    //
-    //  globalhinst = hInstance;
-    
-    // pre-load the audio
-    //HANDLE hResInfo, hRes; 
-    ////HRSRC hRes;         // handle/ptr. to res. info. in hExe 
-    //hResInfo = FindResource(NULL, "explosion", "WAVE"); 
-    
-    //if (hResInfo == NULL) {
-    //  MessageBox(NULL, "could not load sound resource", "error", MB_OK);
-    //  return FALSE; 
-    //}
-    
-    //hRes = LoadResource(hInstance, (HRSRC)hResInfo);
-    //if (hRes == NULL)     return FALSE;
-    
-    //expRes = LockResource(hRes); 
-    //
-    //  HWAVEOUT    hWaveOut; 
-    //  HGLOBAL     hWaveHdr; 
-    //  LPWAVEHDR   lpWaveHdr; 
-    //  HMMIO       hmmio; 
-    //  UINT        wResult; 
-    //  HANDLE      hFormat; 
-    //  WAVEFORMATEX  *pFormat; 
-    //  DWORD       dwDataSize; 
-    //
-    //  /* register window class */
-    //  wc.style = CS_OWNDC;
-    //  wc.lpfnWndProc = WndProc;
-    //  wc.cbClsExtra = 0;
-    //  wc.cbWndExtra = 0;
-    //  wc.hInstance = hInstance; 
-    //  wc.hIcon = ExtractIcon (hInstance, "ufoicon.ico", 0);  
-    //  wc.hCursor = LoadCursor (NULL, IDC_ARROW);
-    //  wc.hbrBackground = (HBRUSH) GetStockObject (BLACK_BRUSH);
-    //  wc.lpszMenuName = NULL;
-    //  wc.lpszClassName = "GLSample";
-    //  RegisterClass (&wc);
-    
-    /* create main window */
-    
-    //  hWnd = CreateWindow (
-    //		       "GLSample", "UFO Invasion", 
-    //		       WS_CAPTION | WS_POPUPWINDOW | WS_VISIBLE|WS_MINIMIZEBOX ,
-    //		       0, 0, window_width, window_height,
-    //		       NULL, NULL, hInstance, NULL);
-    
-    
-    
-    //  EnableOpenGL (hWnd, &hDC, &hRC);
+
     
     nf = new Newfont("myfont.obj", "myfont.mtl", 1);  
-    //  skycube = new Skycube();
-    //  timeSetEvent(14, 0, cbFunct, NULL, TIME_PERIODIC);
+
     
     glEnable(GL_LIGHTING);
     GLfloat LightAmbient[]= { 0, 0, 0, 1.0f };
@@ -303,38 +238,9 @@ void mymain(void)
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT, LightGlobal);
     
     
-    // start some midi music
-    //  CreateThread( 
-    //	       NULL,              // default security attributes
-    //	       0,                 // use default stack size  
-    //	       MusicThread,        // thread function 
-    //	       NULL,             // argument to thread function 
-    //	       0,                 // use default creation flags 
-    //	       NULL);   // returns the thread identifier   
-    //	    
+
     
-    //  while (!musicrolling)   Sleep(1);
-    
-    //  /* program main loop */
-    //  while (!bQuit)
-    //    {
-    //      /* check for messages */
-    //      if (PeekMessage (&msg, NULL, 0, 0, PM_REMOVE))
-    //        {
-    //	  /* handle or dispatch messages */
-    //	  if (msg.message == WM_QUIT)
-    //            {
-    //	      bQuit = TRUE;
-    //            }
-    //	  else
-    //            {
-    //	      TranslateMessage (&msg);
-    //	      DispatchMessage (&msg);
-    //            }
-    //        }
-    //      else
-    //        {
-    /* OpenGL animation code goes here */
+
     
     glClearColor (0.0f, 0.0f, 0.0f, 0.0f);
     glClear (GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
@@ -342,7 +248,7 @@ void mymain(void)
     glLoadIdentity();
     gluPerspective(60.0f, float(window_width)/float(window_height), 0.1f, 100.0f);
     
-    if (gamestate == GAMEMENU) {drawgamemenu(); //Sleep(20);
+    if (gamestate == GAMEMENU) {drawgamemenu(); 
         
     }
     else if (gamestate == ACTION) drawgamescreen();
@@ -382,19 +288,9 @@ void mymain(void)
     }
     
     
-    
-    // Sleep (1);
+   
 }
-//   }
 
-/* shutdown OpenGL */
-//DisableOpenGL (hWnd, hDC, hRC);
-
-/* destroy the window explicitly */
-//DestroyWindow (hWnd);
-
-//return msg.wParam;
-//}
 
 void centertext(char *str)
 {
@@ -716,141 +612,7 @@ void reseteverything(void)
     gamestate = GAMEMENU;     
 }
 
-/********************
- * Window Procedure
- *
- ********************/
 
-//LRESULT CALLBACK WndProc (HWND hWnd, UINT message,
-//                          WPARAM wParam, LPARAM lParam)
-//{
-//
-//  switch (message)
-//    {
-//    case WM_LBUTTONDOWN:
-//      {
-//	if (gamestate == YOULOSE) {reseteverything(); return 0;}                    
-//	if (gamestate == INSTRUCTIONS) {gamestate=GAMEMENU; return 0;}	                     
-//	if (gamestate != GAMEMENU) return 0;
-//	int xpos = LOWORD(lParam); 
-//	int ypos = HIWORD(lParam);               
-//
-//	ypos+=25;
-//	xpos+=4;
-//
-//	// PLAY
-//	if (ypos > 262 && ypos < 322 &&
-//	    xpos > 162 && xpos < 609) gamestate = ACTION;             
-//	  
-//	// INFO	
-//	if (ypos > 325 && ypos < 390 &&
-//	    xpos > 162 && xpos < 609) gamestate = INSTRUCTIONS;
-//	  
-//	// EXIT	
-//	if (ypos > 390 && ypos < 459 &&
-//	    xpos > 162 && xpos < 609) PostQuitMessage (0);             
-//
-//	return 0;              
-//      }
-//         
-//    case WM_CREATE:
-//      return 0;
-//    case WM_CLOSE:
-//      PostQuitMessage (0);
-//      return 0;
-//
-//    case WM_DESTROY:
-//      return 0;
-//
-//    case WM_KEYDOWN:
-//      switch (wParam)
-//        {
-//        case VK_ESCAPE:
-//	  gamestate = GAMEMENU;
-//	  return 0;
-//	  
-//	case 'P':
-//	  if (gamestate == ACTION) gamestate = PAUSED;
-//	  else if (gamestate == PAUSED) gamestate = ACTION;
-//	  return 0;
-//
-//        case VK_UP:
-//	  if (gamestate != GAMEMENU) return 0;
-//	  if (menusel == PLAY) menusel = EXITGAME;
-//	  else if (menusel == INFO) menusel = PLAY;
-//	  else if (menusel == EXITGAME) menusel = INFO;
-//	  return 0;             
-//
-//        case VK_DOWN:
-//	  if (gamestate != GAMEMENU) return 0;
-//	  if (menusel == PLAY) menusel = INFO;
-//	  else if (menusel == INFO) menusel = EXITGAME;
-//	  else if (menusel == EXITGAME) menusel = PLAY;
-//	  return 0;             
-//
-//	case VK_RETURN:
-//
-//	  if (gamestate == INSTRUCTIONS) {gamestate = GAMEMENU; return 0;}
-//	  if (gamestate == YOULOSE || gamestate == YOUWIN) {reseteverything(); return 0;}
-//  	  if (gamestate != GAMEMENU) return 0;
-//	  if (menusel == PLAY) gamestate = ACTION;             
-//	  if (menusel == INFO) gamestate = INSTRUCTIONS;
-//	  if (menusel == EXITGAME) PostQuitMessage (0);             
-//	  return 0;           	  
-//        }
-//      return 0;
-//
-//    default:
-//      return DefWindowProc (hWnd, message, wParam, lParam);
-//    }
-//}
-
-
-///*******************
-// * Enable OpenGL
-// *
-// *******************/
-//
-//void EnableOpenGL (HWND hWnd, HDC *hDC, HGLRC *hRC)
-//{
-//  PIXELFORMATDESCRIPTOR pfd;
-//  int iFormat;
-//
-//  /* get the device context (DC) */
-//  *hDC = GetDC (hWnd);
-//
-//  /* set the pixel format for the DC */
-//  ZeroMemory (&pfd, sizeof (pfd));
-//  pfd.nSize = sizeof (pfd);
-//  pfd.nVersion = 1;
-//  pfd.dwFlags = PFD_DRAW_TO_WINDOW | 
-//    PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER;
-//  pfd.iPixelType = PFD_TYPE_RGBA;
-//  pfd.cColorBits = 24;
-//  pfd.cDepthBits = 16;
-//  pfd.iLayerType = PFD_MAIN_PLANE;
-//  iFormat = ChoosePixelFormat (*hDC, &pfd);
-//  //  iFormat=4;
-//  SetPixelFormat (*hDC, iFormat, &pfd);
-//
-//  /* create and enable the render context (RC) */
-//  *hRC = wglCreateContext( *hDC );
-//  wglMakeCurrent( *hDC, *hRC );
-//
-//}
-//
-//
-///******************
-// * Disable OpenGL
-// *
-// ******************/
-//
-//void DisableOpenGL (HWND hWnd, HDC hDC, HGLRC hRC)
-//{
-//  wglMakeCurrent (NULL, NULL);
-//  wglDeleteContext (hRC);
-//  ReleaseDC (hWnd, hDC);
-//}
 
 
 void physicsloop(void)
